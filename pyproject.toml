@@ -4,10 +4,11 @@ version = "0.1.0"
 description = "AI grające w blackjacka"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = ["gymnasium>=1.1"]
 
 [project.optional-dependencies]
 dev = ["pytest"]
+gpu = ["torch", "numpy"]  # torch z CUDA: patrz README
 
 [build-system]
 requires = ["setuptools>=61"]
