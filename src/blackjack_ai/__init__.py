@@ -1,0 +1,1 @@
+"""AI grające w blackjacka."""

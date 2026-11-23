@@ -1,0 +1,18 @@
+[project]
+name = "blackjack-ai"
+version = "0.1.0"
+description = "AI grające w blackjacka"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["gymnasium>=1.1"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+gpu = ["torch", "numpy"]  # torch z CUDA: patrz README
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
